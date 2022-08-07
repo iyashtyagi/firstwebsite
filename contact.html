@@ -5,21 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Contact Me</h1>
-    <ul>
-        <li><a href="mailto:contactyashtyagi@gmail.com"><h3>Gmail</h3></a></li> 
-        <li><a href="https://www.instagram.com/i.yashtyagi/"><h3>Instagram</h3></a></li>   
-    </ul>
+    <h1 class="contact">Contact Me</h1>
+    <table cellspacing="10">
+        <tr>
+            <td>
+                <img src="/HTML - Personal Site/Images/instagram.png" alt="Instagram-icon" width="50">
+            </td>
+            <td>
+               <a href="https://www.instagram.com/i.yashtyagi/"><h3>Instagram</h3></a>
+            </td>
+        </tr>
+    </table>
     <hr>
-
-    <form action="">Contact Me</form>
-    <label>Your Name</label>
-    <input type="text">
-    <input type="submit" ><br>
-    <label for=""></label>
-
+    
+    
+    <form action="mailto:contactyashtyagi" enctype="text/plain" method="post">
+        <label>Your Name </label>
+        <input type="text" name="Your Name"><br><br>
+        <label >Your Email </label>
+        <input type="email" name="yourEmail" ><br><br>
+        <label >Your Message</label><br>
+        <textarea name="YourMessage" cols="30" rows="10"></textarea><br>
+        <input type="submit" >
+    </form>
 
 </body>
 </html>
